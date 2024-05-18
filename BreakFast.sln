@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Ordering.API", "BreakFast.Ordering.API\BreakFast.Ordering.API.csproj", "{BA594720-AAB0-470B-ACB1-B67CDFB07066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Ordering.Domain", "BreakFast.Ordering.Domain\BreakFast.Ordering.Domain.csproj", "{7A19B2B3-536B-4D08-9917-AED64D5B2AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Ordering.Infrastructure", "BreakFast.Ordering.Infrastructure\BreakFast.Ordering.Infrastructure.csproj", "{F31A4064-4222-4026-8808-506C79A3EA2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA594720-AAB0-470B-ACB1-B67CDFB07066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA594720-AAB0-470B-ACB1-B67CDFB07066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA594720-AAB0-470B-ACB1-B67CDFB07066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA594720-AAB0-470B-ACB1-B67CDFB07066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A19B2B3-536B-4D08-9917-AED64D5B2AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A19B2B3-536B-4D08-9917-AED64D5B2AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A19B2B3-536B-4D08-9917-AED64D5B2AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A19B2B3-536B-4D08-9917-AED64D5B2AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31A4064-4222-4026-8808-506C79A3EA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31A4064-4222-4026-8808-506C79A3EA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31A4064-4222-4026-8808-506C79A3EA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31A4064-4222-4026-8808-506C79A3EA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
