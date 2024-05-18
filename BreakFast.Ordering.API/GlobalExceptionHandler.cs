@@ -1,4 +1,5 @@
 using System.Net;
+using BreakFast.Ordering.Domain.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 
 namespace BreakFast.Ordering.API;
@@ -23,6 +24,12 @@ public class GlobalExceptionHandler : IExceptionHandler
 
 		switch (exception)
 		{
+			case OrderAccessDeniedException:
+				errorResponse.StatusCode = (int)HttpStatusCode.Forbidden;
+				errorResponse.Title = exception.GetType().Name;
+				break;
+			case OrderNotFoundException:
+			case BreakFastAppException:
 			case BadHttpRequestException:
 				errorResponse.StatusCode = (int)HttpStatusCode.BadRequest;
 				errorResponse.Title = exception.GetType().Name;

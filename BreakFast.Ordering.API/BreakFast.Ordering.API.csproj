@@ -9,8 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Mapster" Version="7.4.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BreakFast.Ordering.Domain\BreakFast.Ordering.Domain.csproj" />
     </ItemGroup>
 
 </Project>
