@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <RootNamespace>Ordering.API</RootNamespace>
+        <RootNamespace>BreakFast.Ordering.API</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
