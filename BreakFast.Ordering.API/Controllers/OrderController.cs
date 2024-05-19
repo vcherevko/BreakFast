@@ -1,4 +1,4 @@
-using BreakFast.Ordering.API.DTOs;
+﻿using BreakFast.Ordering.API.DTOs;
 using BreakFast.Ordering.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +25,7 @@ public class OrderController(
 /// <exception cref="Exception"></exception>
 	[HttpGet]
 	[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<OrderDto>))]
-	[ProducesResponseType(StatusCodes.Status404NotFound)]
+	[ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ErrorResponse))]
 	public async Task<IActionResult> GetOrdersByUserAsync(int consumerId, CancellationToken cancellationToken)
 	{
 		return Ok(await _consumerService.GetOrdersAsync(consumerId, cancellationToken));
@@ -47,8 +47,8 @@ public class OrderController(
 	/// <exception cref="Exception"></exception>
 	[HttpGet("{orderId:int}")]
 	[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderDto))]
-	[ProducesResponseType(StatusCodes.Status403Forbidden)]
-	[ProducesResponseType(StatusCodes.Status404NotFound)]
+	[ProducesResponseType(StatusCodes.Status403Forbidden, Type = typeof(ErrorResponse))]
+	[ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ErrorResponse))]
 	public async Task<IActionResult> GetOrderAsync(int consumerId, int orderId, CancellationToken cancellationToken)
 	{
 		return Ok(await _consumerService.GetOrderByIdAsync(consumerId, orderId, cancellationToken));
@@ -66,7 +66,7 @@ public class OrderController(
 	/// <exception cref="Exception"></exception>
 	[HttpPost]
 	[ProducesResponseType(StatusCodes.Status201Created)]
-	[ProducesResponseType(StatusCodes.Status400BadRequest)]
+	[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ErrorResponse))]
 	public async Task<IActionResult> CreateOrderAsync(int consumerId, [FromBody]OrderCreatingDto orderModel, CancellationToken cancellationToken)
 	{
 		await _consumerService.CreateOrderAsync(consumerId, orderModel, cancellationToken);

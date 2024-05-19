@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BreakFast.Ordering.Domain\BreakFast.Ordering.Domain.csproj" />
+      <ProjectReference Include="..\BreakFast.Ordering.Infrastructure\BreakFast.Ordering.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

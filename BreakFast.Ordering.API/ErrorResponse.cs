@@ -1,4 +1,4 @@
-namespace BreakFast.Ordering.API;
+﻿namespace BreakFast.Ordering.API;
 
 public class ErrorResponse
 {
