@@ -26,4 +26,9 @@ public static partial class Extensions
 
 		return builder;
 	}
+
+	public static void ConfigureExceptionHandlingMiddleware(this WebApplication app)
+	{
+		app.UseMiddleware<ExceptionHandlingMiddleware>();
+	}
 }

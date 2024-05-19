@@ -15,6 +15,7 @@ public class Program
 
 		// dotnet ef -p BreakFast.Catalog.API -s BreakFast.Catalog.API migrations add "Initial_migration" -o "Infrastructures/Migrations"
 		var app = builder.Build();
+		app.ConfigureExceptionHandlingMiddleware();
 
 		// Configure the HTTP request pipeline.
 		if (app.Environment.IsDevelopment())
