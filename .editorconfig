@@ -9,10 +9,10 @@ indent_style = tab
 indent_size = 4
 trim_trailing_whitespace = true
 
-[{*.cjsx,*.coffee,*.har,*.jsb2,*.jsb3,*.json,*.js.map,.babelrc,.eslintrc,.stylelintrc,bowerrc,jest.config,*.less}]
+[{*.cjsx,*.coffee,*.har,*.jsb2,*.jsb3,*.json,*.js.map,.babelrc,.eslintrc,.stylelintrc,bowerrc,jest.config,*.less,*.yml}]
 indent_size = 2
 
-[{tsconfig.app.json,tsconfig.e2e.json,tsconfig.editor.json,tsconfig.json,tsconfig.lib.json,tsconfig.spec.json,tsconfig.test.json,*.less,*.js.map,*.cjsx,*.coffee}]
+[{tsconfig.app.json,tsconfig.e2e.json,tsconfig.editor.json,tsconfig.json,tsconfig.lib.json,tsconfig.spec.json,tsconfig.test.json,*.less,*.js.map,*.cjsx,*.coffee,*.yml}]
 indent_style = space
 
 [*.{appxmanifest,asax,ascx,aspx,axaml,build,cg,cginc,compute,cs,cshtml,dtd,hlsl,hlsli,hlslinc,master,nuspec,paml,razor,resw,resx,skin,usf,ush,vb,xaml,xamlx,xoml,xsd,css,scss,cjs,js,ats,ts}]

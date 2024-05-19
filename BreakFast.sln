@@ -6,6 +6,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Ordering.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Ordering.Infrastructure", "BreakFast.Ordering.Infrastructure\BreakFast.Ordering.Infrastructure.csproj", "{F31A4064-4222-4026-8808-506C79A3EA2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakFast.Catalog.API", "BreakFast.Catalog.API\BreakFast.Catalog.API.csproj", "{486230B9-2D91-45AF-B242-11A2D9715E50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ACF1E81-EE09-4F58-B806-5AF64B9D5FC0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +31,9 @@ Global
 		{F31A4064-4222-4026-8808-506C79A3EA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F31A4064-4222-4026-8808-506C79A3EA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F31A4064-4222-4026-8808-506C79A3EA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486230B9-2D91-45AF-B242-11A2D9715E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486230B9-2D91-45AF-B242-11A2D9715E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486230B9-2D91-45AF-B242-11A2D9715E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486230B9-2D91-45AF-B242-11A2D9715E50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

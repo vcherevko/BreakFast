@@ -1,0 +1,11 @@
+﻿services:
+  breakfast.catalog.api:
+    image: breakfast.catalog.api
+    build:
+      context: .
+      dockerfile: BreakFast.Catalog.API/Dockerfile
+  breakfast.ordering.api:
+    image: breakfast.ordering.api
+    build:
+      context: .
+      dockerfile: BreakFast.Ordering.API/Dockerfile
